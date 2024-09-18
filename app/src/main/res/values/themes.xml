@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LogoAnim" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Tema SplashScreen için -->
+    <style name="Theme.AnimationDemo.SplashScreen" parent="Theme.SplashScreen">
+        <!-- Splash screen için logo burada tanımlanır -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item> <!-- Logo animasyon süresi -->
+        <item name="postSplashScreenTheme">@style/Theme.AnimationDemo.SplashScreen</item> <!-- Splash sonrası tema -->
+    </style>
+
+
+    <style name="Theme.LogoAnim" parent="Base.Theme.LogoAnim" />
+</resources>
